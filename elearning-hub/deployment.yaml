@@ -1,1 +1,22 @@
 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: medplux-deployment
+  labels:
+    app: medplux
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: medplux
+  template:
+    metadata:
+      labels:
+        app: medplux
+    spec:
+      containers:
+      - name: medplux
+        image: 062266257890.dkr.ecr.us-east-1.amazonaws.com/medplux:22
+        ports:
+        - containerPort: 80
