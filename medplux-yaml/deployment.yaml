@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: medplux
-          image: 062266257890.dkr.ecr.us-east-1.amazonaws.com/medplux:22
+          image: digibosstech/jenkins-docker:latest
           ports:
             - containerPort: 80
