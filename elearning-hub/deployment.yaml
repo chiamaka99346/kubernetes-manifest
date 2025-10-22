@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: medplux
-        image: 062266257890.dkr.ecr.us-east-1.amazonaws.com/elearning-hub:22
+        image: 062266257890.dkr.ecr.us-east-1.amazonaws.com/medplux:22
         ports:
         - containerPort: 80
